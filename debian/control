@@ -1,0 +1,32 @@
+Source: certifi
+Maintainer: Filip Pytloun <filip.pytloun@tcpcloud.eu>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 9)
+Standards-Version: 3.9.1
+
+Package: python-certifi
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Python package for providing Mozilla's CA Bundle.
+ Certifi: Python SSL Certificates
+ ================================
+ .
+ `Certifi`_ is a carefully curated collection of Root Certificates for
+ validating the trustworthiness of SSL certificates while verifying the identity
+ of TLS hosts. It has been extracted from the `Requests`_ project.
+ .
+ Installation
+ ------------
+ .
+ `certifi` is available on PyPI. Simply install it with `pip`::
+ .
+     $ pip install certifi
+ .
+ Usage
+ -----
+ .
+ To reference the installed CA Bundle, you can use the built-in function::
+ .
+     >>> import certifi
+
